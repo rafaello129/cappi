@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import { MapPin, UserCheck, CalendarCheck, Lightbulb } from 'lucide-react';
 
+import matchingNodesImg from '../assets/cappi_matching_nodes_1771701888531.png';
+import conciergeMobileImg from '../assets/cappi_concierge_mobile_1771701910144.png';
+
 export default function ClientSystem() {
     const benefits = [
         {
@@ -30,7 +33,7 @@ export default function ClientSystem() {
             {/* Background Matching Nodes - Set to blend with dark mode */}
             <div className="absolute inset-0 z-0 opacity-10 mix-blend-screen pointer-events-none flex justify-center items-center">
                 <img
-                    src="/cappi_matching_nodes_1771701888531.png"
+                    src={matchingNodesImg}
                     alt="Nodes"
                     className="w-full h-full object-cover opacity-30"
                     onError={(e) => { e.currentTarget.style.display = 'none'; }}
@@ -96,7 +99,7 @@ export default function ClientSystem() {
                         {/* Soft Glow Behind Phone */}
                         <div className="absolute inset-0 bg-blue-500/20 blur-[120px] rounded-full" />
                         <img
-                            src="/cappi_concierge_mobile_1771701910144.png"
+                            src={conciergeMobileImg}
                             alt="Concierge Chat Mobile"
                             className="h-[400px] md:h-[600px] w-auto drop-shadow-2xl rounded-[3rem] relative z-10 
                          border-[8px] border-zinc-900/80 object-cover"

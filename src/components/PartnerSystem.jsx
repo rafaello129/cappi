@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { Layers, Activity, Wand2, Cpu } from 'lucide-react';
 
+import partnerDashboardImg from '../assets/cappi_partner_dashboard_1771701930016.png';
+
 export default function PartnerSystem() {
     const features = [
         {
@@ -59,7 +61,7 @@ export default function PartnerSystem() {
                     >
                         <div className="absolute inset-0 bg-indigo-500/20 blur-[100px] rounded-full" />
                         <img
-                            src="/cappi_partner_dashboard_1771701930016.png"
+                            src={partnerDashboardImg}
                             alt="Partner Dashboard UI"
                             className="w-full h-auto rounded-3xl border border-white/10 shadow-[0_20px_60px_-15px_rgba(79,70,229,0.3)] relative z-10"
                             onError={(e) => { e.currentTarget.style.display = 'none'; }}
